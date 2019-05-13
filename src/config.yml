@@ -1,0 +1,12 @@
+# My SQL
+host: localhost
+port: 3306
+database: survie
+user: Fingarde
+password: timothe
+
+
+# Value
+chunkChekingPerTick: 5
+blockReplacingPerTick: 1000
+chunkCheckingRadius: 3

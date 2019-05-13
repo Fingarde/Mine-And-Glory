@@ -1,0 +1,10 @@
+out/
+.classpath
+.project
+.assets/
+.textures/
+.idea/
+.lib/
+.test/
+Plugin.jar
+Survie 1.14.iml

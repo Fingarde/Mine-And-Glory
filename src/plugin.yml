@@ -1,0 +1,15 @@
+name: Survie
+version: 1.0.0
+main: fr.fingarde.survie.Main
+description: Simple survival plugin
+author: Fingarde
+load: STARTUP
+api-version: 1.13
+commands:
+  light:
+    description: Create light
+  bite:
+    description: Create light
+  deathhistory:
+    description: Death history command (Admin only, restore and look player's death inventory)
+
