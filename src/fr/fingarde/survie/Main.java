@@ -252,6 +252,7 @@ public class Main extends JavaPlugin
         Bukkit.getServer().getPluginManager().registerEvents(new PlayerSleepEvent(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new VehicleListener(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new CustomBlockListener(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new BedrockEvent(), this);
     }
 
     private void registerCrafts()
