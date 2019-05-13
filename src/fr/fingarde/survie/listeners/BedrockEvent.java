@@ -12,32 +12,41 @@ import org.bukkit.potion.PotionEffectType;
 
 import fr.fingarde.survie.objects.newBlocks;
 
-public class BedrockEvent extends Listeners {
+public class BedrockEvent extends Listeners
+{
 	
 	private static final int miningCoefficient = 3;
 	
 	@EventHandler
-	public void onPlayerInteract(PlayerInteractEvent event) {
+	public void onPlayerInteract(PlayerInteractEvent event)
+	{
 		
 		//Check if the player left click on a block
-		if(event.getAction() != Action.LEFT_CLICK_BLOCK) {
+		if(event.getAction() != Action.LEFT_CLICK_BLOCK)
+		{
 			return;
 		}
 		
 		Block block = event.getClickedBlock();
 		
 		//Check if the clicked block is a bedrock block
-		if(block.getBlockData().getMaterial() != Material.BEDROCK) {
+		if(block.getType() != Material.BEDROCK)
+		{
 			return;
 		}
 		
 		//Check if the player holds a bedrock pickaxe
 		ItemStack currentItem = event.getItem();
-		if(currentItem.getItemMeta().getLocalizedName() != "survie:bedrock_pickaxe") {
-			return;
+		if(currentItem.getItemMeta() != null) {
+			if (currentItem.getItemMeta().getLocalizedName() != "survie:bedrock_pickaxe")
+			{
+				block.setType(Material.BEDROCK);
+				return;
+			}
 		}
 		
 		newBlocks.setNewBlock(block, newBlocks.blocks.breakable_bedrock);
+
 		Player player = event.getPlayer();
 		player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_DIGGING, 1, BedrockEvent.miningCoefficient));		
 	}
