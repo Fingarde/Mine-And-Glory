@@ -45,6 +45,8 @@ public class newItems
         // OTHERS
         lucky_block (newItems.type.BLOCK, Material.IRON_HOE, "survie:lucky_block", ChatColor.GOLD + "Lucky Block", 13, newBlocks.blocks.lucky_block.name()),
         meteorite_stone (newItems.type.BLOCK, Material.IRON_HOE, "survie:meteorite_stone", ChatColor.DARK_GRAY  + "Meteorite Stone", 14, newBlocks.blocks.meteorite_stone.name()),
+        breakable_bedrock (newItems.type.BLOCK, Material.IRON_HOE, "survie:breakable_bedrock", ChatColor.DARK_GRAY  + "Bedrock", 14, newBlocks.blocks.breakable_bedrock.name()),
+        
 
         // ITEMS
         emerald (newItems.type.ITEM, Material.SHEARS, "survie:emerald", ChatColor.GREEN + "Emerald", 1, null),

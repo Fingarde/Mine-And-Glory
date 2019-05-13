@@ -24,7 +24,9 @@ public class newBlocks
         saphir_block (new boolean[] {false, true, true, false, true, true}),
         onyx_block (new boolean[] {false, true, true, true, false, false}),
         meteorite_block (new boolean[] {false, true, true, true, false, true}),
-
+        breakable_bedrock (new boolean[] {true, false, false, false, false, false}),
+        
+        
         // OTHERS
         lucky_block (new boolean[] {false, true, true, true, true, false}),
         meteorite_stone (new boolean[] {false, true, true, true, true, true});
