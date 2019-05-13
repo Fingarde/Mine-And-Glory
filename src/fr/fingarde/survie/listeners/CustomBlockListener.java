@@ -8,8 +8,7 @@ import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.block.Action;
-import org.bukkit.event.block.BlockPhysicsEvent;
+import org.bukkit.event.block.*;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 public class CustomBlockListener extends Listeners
@@ -65,9 +64,12 @@ public class CustomBlockListener extends Listeners
                         break;
                 }
 
+                loc = block.getLocation();
+
                 loc.getWorld().playSound(loc, Sound.BLOCK_STONE_PLACE, 1 , 1);
                 newBlocks.setNewBlock(block, newBlock);
 
+                loc.getWorld().getBlockAt(loc.getBlockX(), loc.getBlockY() + 1, loc.getBlockZ()).getState().update();
                 if(event.getPlayer().getGameMode() == GameMode.SURVIVAL) event.getItem().setAmount(event.getItem().getAmount() - 1);
             }
         }
