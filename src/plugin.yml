@@ -1,5 +1,23 @@
+<<<<<<< HEAD
 main: fr.fingarde.mineandglory.MineAndGlory
 name: mine_and_glory
 version: 0.0.1
 author: Fingarde
 api-version: 1.13
+=======
+name: Survie
+version: 1.0.0
+main: fr.fingarde.survie.Main
+description: Simple survival plugin
+author: Fingarde
+load: STARTUP
+api-version: 1.13
+commands:
+  light:
+    description: Create light
+  bite:
+    description: Create light
+  deathhistory:
+    description: Death history command (Admin only, restore and look player's death inventory)
+
+>>>>>>> dcf3257e9d9f7e678b53faa4cbc25e87c2fb2d98

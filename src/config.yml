@@ -1,5 +1,20 @@
+<<<<<<< HEAD
 host: localhost
 port: 3306
 database: database
 user: root
 password: root
+=======
+# My SQL
+host: localhost
+port: 3306
+database: survie
+user: Fingarde
+password: timothe
+
+
+# Value
+chunkChekingPerTick: 5
+blockReplacingPerTick: 1000
+chunkCheckingRadius: 3
+>>>>>>> dcf3257e9d9f7e678b53faa4cbc25e87c2fb2d98

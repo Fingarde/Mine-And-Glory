@@ -1,5 +1,17 @@
 out/
+<<<<<<< HEAD
 .idea/
 .libs/
 MineAndGlory.jar
 MineAndGlory.iml
+=======
+.classpath
+.project
+.assets/
+.textures/
+.idea/
+.lib/
+.test/
+Plugin.jar
+Survie 1.14.iml
+>>>>>>> dcf3257e9d9f7e678b53faa4cbc25e87c2fb2d98
