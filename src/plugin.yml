@@ -1,0 +1,5 @@
+main: fr.fingarde.mineandglory.MineAndGlory
+name: mine_and_glory
+version: 0.0.1
+author: Fingarde
+api-version: 1.13
